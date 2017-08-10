@@ -289,6 +289,7 @@ animation: spin 30s linear infinite;
 
 
 /******* PROJECTS (diamonds layout)  *******/
+/* Picture div */
 .wrap{
     width:100%;
     margin-left:-35%;
@@ -299,11 +300,13 @@ animation: spin 30s linear infinite;
       overflow: none;
     
 }
+/* Diamond shape */
 .pic { 
 -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+/* Size and shape of Diamond */
 .wrap > a{
     background-color: black;
     float:left;
@@ -315,6 +318,7 @@ animation: spin 30s linear infinite;
     background-position: center;
     overflow: hidden;
 }
+/* Hovering over diamonds so they have a blue gradient */
 .wrap > a:hover{
   display: block;
   transition: .5s ease;
@@ -330,6 +334,158 @@ animation: spin 30s linear infinite;
 .wrap > a:hover .text{
     opacity: 1;
 }
+/* Project titles inside the diamonds */
+.middle { 
+background: 
+   rgba(0, 0, 0, 0.7);
+}
+.text {
+    transition: .5s ease;
+    position: fixed;
+    opacity: 0;
+    -ms-transform: translate(25%, 80%) rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: translate(25%, 80%) rotate(45deg);
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+@media(max-width: 459px) {
+    .text {
+        font-size: 10px;
+        margin-top: -5%;
+        margin-left: -5%;
+        padding: 1px 10px 10px 15px;
+        -ms-transform: translate(25%, 80%) rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: translate(25%, 80%) rotate(45deg);
+    }
+    .text-extra1 {
+        margin-top: 2%;
+        margin-left: 1%;
+        padding: 1px 15px 0px 0px;
+        -ms-transform: translate(5%, 80%) rotate(45deg); 
+        -webkit-transform: rotate(45deg); 
+        transform: translate(5%, 80%) rotate(45deg);
+    }
+    .text-extra {
+        margin-top: -1%;
+        margin-left: -2%;
+        padding: 1px 15px 0px 0px;
+        -ms-transform: translate(5%, 80%) rotate(45deg); 
+        -webkit-transform: rotate(45deg); 
+        transform: translate(5%, 80%) rotate(45deg);
+    }
+}
+@media(max-width: 600px) and (min-width: 450px){
+    .text {
+        font-size: 10px;
+        margin-top: -3%;
+        margin-left: -2%;
+        padding: 1px 5px 5px 15px;
+        -ms-transform: translate(25%, 80%) rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: translate(25%, 80%) rotate(45deg);
+    }
+    .text-extra {
+        margin-top: -3%;
+        margin-left: -6%;
+        padding: 1px 5px 5px 15px;
+        -ms-transform: translate(25%, 80%) rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: translate(25%, 80%) rotate(45deg);
+    }
+    .text-extra1 {
+        margin-top:0%;
+        margin-left: -2%;
+        padding: 1px 5px 5px 15px;
+        -ms-transform: translate(25%, 80%) rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: translate(25%, 80%) rotate(45deg);
+    }
+}
+@media(max-width: 900px) and (min-width: 601px) {
+    .text {
+        font-size: 13px;
+        margin-top: 1%;
+        margin-left: 4%;
+        padding: 1px 15px 0px 0px;
+        -ms-transform: translate(5%, 80%) rotate(45deg); 
+        -webkit-transform: rotate(45deg); 
+        transform: translate(5%, 80%) rotate(45deg);
+    }
+    .text-extra {
+        margin-top: 0%;
+        margin-left: -3%;
+        padding: 1px 5px 5px 15px;
+        -ms-transform: translate(25%, 80%) rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: translate(25%, 80%) rotate(45deg);
+    }
+    .text-extra1 {
+        margin-top:1%;
+        margin-left: -1%;
+        padding: 1px 5px 5px 15px;
+        -ms-transform: translate(25%, 80%) rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: translate(25%, 80%) rotate(45deg);
+    }
+}
+
+@media(max-width: 991px) and (min-width: 901px) {
+    .text {
+        margin-top: -2%;
+        margin-left: 3%;
+        padding: 1px 15px 0px 0px;
+        -ms-transform: translate(5%, 80%) rotate(45deg); 
+        -webkit-transform: rotate(45deg); 
+        transform: translate(5%, 80%) rotate(45deg);
+    }
+    .text-extra {
+        margin-top: -1%;
+        margin-left: 1%;
+        padding: 1px 15px 0px 0px;
+        -ms-transform: translate(5%, 80%) rotate(45deg); 
+        -webkit-transform: rotate(45deg); 
+        transform: translate(5%, 80%) rotate(45deg);
+    }.text-extra1 {
+        margin-top: 2%;
+        margin-left: 3%;
+        padding: 1px 15px 0px 0px;
+        -ms-transform: translate(5%, 80%) rotate(45deg); 
+        -webkit-transform: rotate(45deg); 
+        transform: translate(5%, 80%) rotate(45deg);
+    }
+}
+@media(max-width: 1300px) and (min-width: 991px) {
+    .text {
+        margin-top: 2%;
+        margin-left: 5%;
+        padding: 1px 15px 0px 0px;
+        -ms-transform: translate(5%, 80%) rotate(45deg); 
+        -webkit-transform: rotate(45deg); 
+        transform: translate(5%, 80%) rotate(45deg);
+    }
+    .text-extra {
+        margin-top: 2%;
+        margin-left: 2%;
+        padding: 1px 15px 0px 0px;
+        -ms-transform: translate(5%, 80%) rotate(45deg); 
+        -webkit-transform: rotate(45deg); 
+        transform: translate(5%, 80%) rotate(45deg);
+    }.text-extra1 {
+        margin-top: 4%;
+        margin-left: 4%;
+        padding: 1px 15px 0px 0px;
+        -ms-transform: translate(5%, 80%) rotate(45deg); 
+        -webkit-transform: rotate(45deg); 
+        transform: translate(5%, 80%) rotate(45deg);
+    }
+}
+
+/* Arranging the diamonds in nice rows */
 .wrap > a:nth-child(1){
     clear:both; 
     margin-left:32%;
@@ -371,22 +527,6 @@ background: url('../img/projects/extension.png');
 }
 .p8 { 
 
-}
-.middle { 
-background: 
-   rgba(0, 0, 0, 0.7);
-}
-.text {
-     transition: .5s ease;
-    position: fixed;
-    opacity: 0;
-    -ms-transform: translate(25%, 80%) rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: translate(25%, 80%) rotate(45deg);
-    text-align: center;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
 }
 
 
