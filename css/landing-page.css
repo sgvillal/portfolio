@@ -335,21 +335,16 @@ transform: translate(-50%, -50%);
     background-color:black;
 }
 
-/* ABOUT ME SECTION */
+/*********** ABOUT ME SECTION ***************/
 
+/* Circle div where picture lies */
 .gradient-circle { 
     max-width: 100%;
     height: auto;
     
 }
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
 .gradient-circle img { 
-    margin-top: 25%;
+    margin-top: 15%;
     top: 0;
     overflow: none;
     border-radius: 999em;
@@ -366,8 +361,9 @@ transform: translate(-50%, -50%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=1 ); /* IE6-9 */
 }
 
+/* Dotted border orbiting picture */
 .circle-border { 
-    margin-top: 25%;
+    margin-top: 15%;
     height: inherit;
     width: 84%;
     margin-left: 15%;
@@ -386,6 +382,61 @@ animation: spin 30s linear infinite;
     100% { transform: rotate(360deg); }
 }
 
+/* Smaller screen (mobile). Makes sure circle pic isnt dominatingly large */
+@media(max-width:567px) {
+    .gradient-circle img { 
+        margin-top: -0%;
+        width: 55%;
+    }
+    .circle-border { 
+        margin-top: -0%;
+        width: 57%;
+        margin-left: 28%;
+    }
+    .quick-about { 
+        margin-left: 10%;
+    }
+}
+@media(max-width:767px) and (min-width: 568px) {
+    .gradient-circle img { 
+        margin-top: -0%;
+        width: 45%;
+    }
+    .circle-border { 
+        margin-top: -0%;
+        width: 49%;
+        margin-left: 33%;
+    }
+    .quick-about { 
+        margin-left: 10%;
+    }
+}
+/* When picture gets too big, gets rid of margin (fullscreen) */
+ @media(min-width:992px) {
+    .gradient-circle img { 
+        margin-top: -0%;
+    }
+    .circle-border { 
+        margin-top: -0%;
+    }
+} 
+
+/* When screen gets too big (fullscreen), picture doesnt get 
+ *  pushed too far to the left  */
+@media(min-width:767px) {
+    .gradient-circle img { 
+        margin-left: 30%;
+    }
+    .circle-border { 
+        margin-left: 26%;
+
+    }
+    .quick-about { 
+        margin-left: -15%;
+    }
+} 
+
+
 .quick-about h5 { 
     margin-left: 20px;
 }
@@ -396,7 +447,7 @@ animation: spin 30s linear infinite;
      -moz-columns: 2;
     -webkit-columns: 2;
     columns: 2;
-    margin-top: -5%; 
+    margin-top: 5%; 
     margin-bottom: 30px; 
     height:100%; 
     width:100%;
