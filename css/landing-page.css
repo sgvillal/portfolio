@@ -30,8 +30,13 @@ h6 {
     font-weight: 400;
 }
 
+.intro-align { 
+    margin-left: 15%;
+}
+
 .intro-header {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    margin-left: -30%;
+    padding-top: 50px; /* navbar allowment */
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
@@ -52,7 +57,7 @@ h6 {
 }
 
 .intro-divider {
-    width: 400px;
+    width: 350px;
     border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
@@ -62,12 +67,19 @@ h6 {
 }
 
 @media(max-width:767px) {
+    .intro-header {
+        margin-left: -50%;
+    }
+    .intro-align { 
+        margin-left: 30%;
+    }
+
     .intro-message {
         padding-bottom: 15%;
     }
 
     .intro-message > h1 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     ul.intro-social-buttons > li {
@@ -81,7 +93,7 @@ h6 {
     }
 
     .intro-divider {
-        width: 100%;
+        width: 40%;
     }
 }
 
@@ -337,11 +349,12 @@ transform: translate(-50%, -50%);
 }
 
 .gradient-circle img { 
+    margin-top: 25%;
     top: 0;
     overflow: none;
     border-radius: 999em;
     height: 100%;
-    width: 50%;
+    width: 80%;
     margin-left: 15%;
     background: #b3dced; /* Old Browsers */
     background: -moz-linear-gradient(left, #b3dced 0%, #29b8e5 50%, #bce0ee 100%); /* FF3.6+ */
@@ -354,9 +367,10 @@ transform: translate(-50%, -50%);
 }
 
 .circle-border { 
+    margin-top: 25%;
     height: inherit;
-    width: 52%;
-    margin-left: 31%;
+    width: 84%;
+    margin-left: 15%;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -378,6 +392,23 @@ animation: spin 30s linear infinite;
 
 
 /* Skills bar */
+.skills-section { 
+     -moz-columns: 2;
+    -webkit-columns: 2;
+    columns: 2;
+    margin-top: -5%; 
+    margin-bottom: 30px; 
+    height:100%; 
+    width:100%;
+    display: inline-block;
+}
+
+.skills-section > .skills-bar { 
+    -moz-column-break-inside:avoid;
+    -webkit-column-break-inside:avoid;
+    column-break-inside:avoid;
+}
+
 .colored-skills { 
     height: 100%;
     position: absolute;
@@ -387,11 +418,11 @@ animation: spin 30s linear infinite;
     padding-top: 10px;
     padding-bottom: 30px;
     background-color: #A0CFD3;
-    width: 20%;
+    width: 35%;
 }
 .skills-bar { 
-    padding-top: 10px;
-    padding-bottom: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border: 2px solid #fff;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -402,10 +433,14 @@ animation: spin 30s linear infinite;
 }
 .skills-list {
     left: 10%;
-    margin-left: 70px;
+    margin-left: 25%;
+    width: 100%;
+}
+@media(max-width:767px) {
+    .skills-section {
+        column-count:1;
+    }
 }
 
-.s1 { 
-    
-}
+
  
