@@ -597,6 +597,122 @@ transform: translate(-50%, -50%);
 
 
 
+
+
+
+
+/******** VOLUNTEERING ********/
+.vol-card {
+    left: 30%;
+    margin: 3%;
+    height: 150px; 
+    width: 230px; 
+    position: relative;
+    -webkit-perspective: 60%;
+    -moz-perspective: 60%;
+    -moz-border-radius: 10px;
+}
+.box{
+    background-color: #C0EFEF;
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 20px;
+    -webkit-border-radius: 10px;
+     -webkit-box-shadow: 0 10px 6px -6px #A68BA5;
+       -moz-box-shadow: 0 10px 6px -6px #A68BA5;
+            box-shadow: 0 10px 6px -6px #A68BA5;
+}
+.vol-card img { 
+    height: 100%;
+    width: 100%;
+     -webkit-border-radius: 10px;
+}
+.box > h2 {
+    font-size: 1em;
+}
+.vol-card.flip .vol-front {
+    z-index: 900;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+}
+.vol-card.flip .vol-back {
+    z-index: 1000;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+}
+.vol-card .vol-front {
+    height: inherit;
+    position: absolute;
+    top: 0;
+    z-index: 900;
+    text-align: center;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+       -moz-transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+    -webkit-transition: all .4s ease-in-out;
+       -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+}
+
+.vol-card .vol-back {
+    height: inherit;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    -webkit-transform: rotateY(-180deg);
+       -moz-transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+    -webkit-transition: all .4s ease-in-out;
+       -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+}
+
+@media(max-width: 430px) {
+    .vol-card {
+        left:15%;
+    }
+}
+@media(max-width: 460px) and (min-width: 431px){
+    .vol-card {
+        left:17%;
+    }
+}
+@media(max-width: 490px) and (min-width: 461px){
+    .vol-card {
+        left:18%;
+    }
+}
+@media(max-width: 520px) and (min-width: 491px){
+    .vol-card {
+        left:19%;
+    }
+}
+@media(max-width: 600px) and (min-width: 521px){
+    .vol-card {
+        left:25%;
+    }
+}
+@media(max-width: 1200px) and (min-width: 991px){
+    .vol-card {
+        left:35%;
+    }
+}
+@media(min-width: 1201px){
+    .vol-card {
+        left:37%;
+    }
+}
+
 /******* CONTACT ME *******/
 .contact-bar {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;   

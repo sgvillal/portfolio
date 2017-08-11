@@ -295,6 +295,53 @@
     </div>
     <!-- /.content-section-a -->
 
+    <a name="volunteer"></a>
+    <div class="content-section-b">
+        <div class="container">
+            <u><h2 class="text-center"> Volunteering </h2></u>
+
+            <a href="envision.html">
+                <div class="hover vol-card">
+                    <div class="vol-front">
+                        <img src="img/volunteering/envision.jpg">
+                    </div>
+                    <div class="vol-back">
+                        <div class="box text-center">
+                           <h2> Envision </h2>
+                           <h5> Society of Women Engineers </h5>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="PRYB.html">
+                <div class="hover vol-card">
+                    <div class="vol-front">
+                        <img src="img/volunteering/pryb.jpg">
+                    </div>
+                    <div class="vol-back">
+                        <div class="box text-center">
+                           <h2> Phi Rho Your Boat </h2>
+                           <h5> Leukemia and Lymphoma Society </h5>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="overnight.html">
+                <div class="hover vol-card">
+                    <div class="vol-front">
+                        <img src="img/volunteering/overnight.jpg">
+                    </div>
+                    <div class="vol-back">
+                        <div class="box text-center">
+                           <h2> Overnight Host Program </h2>
+                           <h5> IDEA Jacobs School of Engineering </h5>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
     <a  name="contact"></a>
     <div class="banner">
 
@@ -363,6 +410,18 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script> 
+        $(document).ready(function(){
+        // set up hover panels
+        // although this can be done without JavaScript, we've attached these events
+        // because it causes the hover to be triggered when the element is tapped on a touch device
+        $('.hover').hover(function(){
+            $(this).addClass('flip');
+        },function(){
+            $(this).removeClass('flip');
+        });
+    });
+    </script>
 
 </body>
 
