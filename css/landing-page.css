@@ -12,13 +12,15 @@ html {
 
 body,
 h1,
-h2,
 h3,
 h4,
 h5,
 h6 {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+}
+h2 { 
+    font-family: 'Julius Sans One', sans-serif;
 }
 
 .topnav {
@@ -55,6 +57,13 @@ h6 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     font-size: 5em;
+}
+.intro-message > h2 {
+    text-shadow: 2px 2px #000000;
+    font-weight: 700;
+    margin: 0;
+    padding-top: 2%;
+    font-size: 1.5em;
 }
 
 .intro-divider {
@@ -94,7 +103,7 @@ h6 {
     }
 
     .intro-divider {
-        width: 40%;
+        width: 35%;
     }
 }
 
@@ -291,6 +300,7 @@ animation: spin 30s linear infinite;
 /******* PROJECTS (diamonds layout)  *******/
 /* Picture div */
 .wrap{
+    margin-top: -1%;
     width:100%;
     margin-left:-35%;
     transform-origin:60% 0;
@@ -588,6 +598,9 @@ transform: translate(-50%, -50%);
 
 
 /******* CONTACT ME *******/
+.contact-bar {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;   
+}
 .banner {
     padding: 100px 0;
     color: #f8f8f8;
